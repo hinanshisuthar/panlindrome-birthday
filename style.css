@@ -1,0 +1,40 @@
+html{
+    background-image: url(images/palindrome-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #DDD6FE;
+    background-position-y: 30px;
+
+}
+
+.whole{
+    margin: 0 0 0 350px;
+    text-align: center;
+    font-size: large;
+    width: 50%;
+    height: auto;
+    color: black;
+}
+
+.first{
+    padding: 0.5rem;
+    /* margin: 0.5rem; */
+    margin-top: 0px;
+}
+
+.para{
+    padding: 1rem;
+    /* margin-top: 100px; */
+    font-size: larger;
+}
+
+input, button{
+    padding: 0.7rem;
+    margin: 0.5rem;
+    display: inline;
+    border: 1px solid black;
+}
+
+#output{
+    font-size: larger;
+}
