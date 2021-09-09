@@ -5,20 +5,17 @@ var outputDiv = document.querySelector("#output");
 
 function clickHandler(e) {
 
-    var bdayStr = dateInput.value;
+    var bdayStr = dateInput.value; //get input from user -> 2021-08-15
 
     if(bdayStr !== "") {
-        var dateWithoutHyphen = bdayStr.split("-");
+        var dateWithoutHyphen = bdayStr.split("-"); //[2021, 08, 15]
         var date = {
-            day: Number(dateWithoutHyphen[2]),
-            month: Number(dateWithoutHyphen[1]),
-            year: Number(dateWithoutHyphen[0])
+            day: Number(dateWithoutHyphen[2]), //15
+            month: Number(dateWithoutHyphen[1]), //08
+            year: Number(dateWithoutHyphen[0])// 2021
         };
         
         var isPalindrome = checkPalindromeForAllDateFormats(date);
-
-
-
 
         if(isPalindrome) {
             outputDiv.innerText = `Wow! Your Birthday is a Palindrome! 🥳`;
